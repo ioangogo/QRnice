@@ -40,7 +40,6 @@ function renderStatus(statusText) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-  renderStatus('Making QR code for ' + url);
   getCurrentTabUrl(function(url) {
     renderStatus('QR code for ' + url);
     var imageResult = document.getElementById('image-result');
